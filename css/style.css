@@ -1,0 +1,200 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+[id] {
+	scroll-margin-top: 72px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-txt {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.hero-txt h1 {
+	text-align: center;
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+	color: #fff;
+}
+
+.hero-txt span {
+	text-transform: uppercase;
+	color: #e9710f;
+}
+
+.hero-txt p {
+	text-align: center;
+}
+.section-title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	color: #e9710f;
+}
+section {
+	scroll-margin-top: 80px;
+}
+
+.subtitle {
+	margin: 20px 0 5px;
+	color: #e9710f;
+	padding: 0 20px;
+}
+
+.navbar {
+	background-color: #e9710f;
+}
+
+.nav-link,
+.navbar-toggler-icon {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.header {
+	position: relative;
+	height: 330px;
+	background-image: url('../img/hero-small.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+main {
+	margin: 60px 0;
+}
+
+.about-us-info {
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+.products {
+	margin: 60px auto;
+}
+
+.product {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	font-size: 16px;
+}
+
+.product:hover h3 {
+	transform: scale(1.6);
+}
+
+.product h3 {
+	text-transform: uppercase;
+	transition: transform 0.3s;
+}
+
+.first-product {
+	background-image: url('../img/product1-small.jpg');
+}
+
+.second-product {
+	background-image: url('../img/product2-small.jpg');
+}
+
+.third-product {
+	background-image: url('../img/product3-small.jpg');
+}
+
+.fourth-product {
+	background-image: url('../img/product4-small.jpg');
+}
+
+.contact {
+	text-align: center;
+}
+
+.contact .ti {
+	color: #e9710f;
+	font-size: 1.2rem;
+	padding-right: 7px;
+}
+
+footer {
+	padding: 30px 10px;
+	text-align: center;
+	background-color: #e9710f;
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+	.header {
+		height: 400px;
+		background-image: url('../img/hero-big.jpg');
+	}
+	.hero-txt h1 {
+		font-size: 42px;
+	}
+	.hero-txt p {
+		font-size: 20px;
+	}
+	.product h3 {
+		font-size: 24px;
+	}
+	.subtitle {
+		font-size: 22px;
+	}
+	.first-product {
+		background-image: url('../img/product1-big.jpg');
+	}
+	.second-product {
+		background-image: url('../img/product2-big.jpg');
+	}
+	.third-product {
+		background-image: url('../img/product3-big.jpg');
+	}
+	.fourth-product {
+		background-image: url('../img/product4-big.jpg');
+	}
+}
+@media (min-width: 992px) {
+	.products-box {
+		font-size: 0;
+	}
+	.product {
+		display: inline-block;
+		width: 50%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hero-txt h1 {
+		font-size: 48px;
+	}
+	.hero-txt p {
+		font-size: 24px;
+	}
+}
